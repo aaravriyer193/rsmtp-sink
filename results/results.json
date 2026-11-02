@@ -1,0 +1,770 @@
+{
+ "machine": "macOS-26.6.2-arm64-arm-64bit",
+ "rounds": 7,
+ "results": [
+  {
+   "scenario": {
+    "name": "1KB, new connection each message",
+    "clients": 1,
+    "sessions": 20,
+    "msgs": 5000,
+    "kb": 1,
+    "reuse": false
+   },
+   "summary": {
+    "postfix": {
+     "msgs_per_sec_median": 5948.806357132422,
+     "msgs_per_sec_min": 5654.171902693701,
+     "msgs_per_sec_max": 6022.115922026693,
+     "server_cpu_us_per_msg_median": 87.4788,
+     "peak_rss_mb_median": 4.34375,
+     "failures": 0
+    },
+    "rust": {
+     "msgs_per_sec_median": 13398.921051882298,
+     "msgs_per_sec_min": 12923.518532032247,
+     "msgs_per_sec_max": 13966.57310226568,
+     "server_cpu_us_per_msg_median": 47.8112,
+     "peak_rss_mb_median": 2.203125,
+     "failures": 0
+    },
+    "rust-4t": {
+     "msgs_per_sec_median": 13034.463240725547,
+     "msgs_per_sec_min": 12717.255747248353,
+     "msgs_per_sec_max": 14067.907901627348,
+     "server_cpu_us_per_msg_median": 91.0958,
+     "peak_rss_mb_median": 2.359375,
+     "failures": 0
+    }
+   },
+   "runs": {
+    "postfix": [
+     {
+      "wall": 0.8304258330000001,
+      "msgs_per_sec": 6021.007296867172,
+      "server_cpu_us_per_msg": 87.61280000000001,
+      "peak_rss_mb": 4.375,
+      "failures": []
+     },
+     {
+      "wall": 0.8405047500000005,
+      "msgs_per_sec": 5948.806357132422,
+      "server_cpu_us_per_msg": 87.4788,
+      "peak_rss_mb": 4.234375,
+      "failures": []
+     },
+     {
+      "wall": 0.8302729580000001,
+      "msgs_per_sec": 6022.115922026693,
+      "server_cpu_us_per_msg": 85.9738,
+      "peak_rss_mb": 4.34375,
+      "failures": []
+     },
+     {
+      "wall": 0.8434472500000005,
+      "msgs_per_sec": 5928.05299916503,
+      "server_cpu_us_per_msg": 87.08239999999999,
+      "peak_rss_mb": 4.359375,
+      "failures": []
+     },
+     {
+      "wall": 0.8505505000000007,
+      "msgs_per_sec": 5878.5457183318285,
+      "server_cpu_us_per_msg": 88.0744,
+      "peak_rss_mb": 4.34375,
+      "failures": []
+     },
+     {
+      "wall": 0.8843027920000015,
+      "msgs_per_sec": 5654.171902693701,
+      "server_cpu_us_per_msg": 91.32739999999998,
+      "peak_rss_mb": 4.234375,
+      "failures": []
+     },
+     {
+      "wall": 0.8313722500000011,
+      "msgs_per_sec": 6014.1531065055315,
+      "server_cpu_us_per_msg": 86.4274,
+      "peak_rss_mb": 4.234375,
+      "failures": []
+     }
+    ],
+    "rust": [
+     {
+      "wall": 0.3828615420000001,
+      "msgs_per_sec": 13059.551434392955,
+      "server_cpu_us_per_msg": 48.282399999999996,
+      "peak_rss_mb": 2.203125,
+      "failures": []
+     },
+     {
+      "wall": 0.3579976250000003,
+      "msgs_per_sec": 13966.57310226568,
+      "server_cpu_us_per_msg": 47.09439999999999,
+      "peak_rss_mb": 2.203125,
+      "failures": []
+     },
+     {
+      "wall": 0.373164375,
+      "msgs_per_sec": 13398.921051882298,
+      "server_cpu_us_per_msg": 47.309799999999996,
+      "peak_rss_mb": 2.1875,
+      "failures": []
+     },
+     {
+      "wall": 0.36939100000000025,
+      "msgs_per_sec": 13535.792696627683,
+      "server_cpu_us_per_msg": 47.9924,
+      "peak_rss_mb": 2.1875,
+      "failures": []
+     },
+     {
+      "wall": 0.3868915409999989,
+      "msgs_per_sec": 12923.518532032247,
+      "server_cpu_us_per_msg": 47.8112,
+      "peak_rss_mb": 2.21875,
+      "failures": []
+     },
+     {
+      "wall": 0.37666624999999954,
+      "msgs_per_sec": 13274.350967202414,
+      "server_cpu_us_per_msg": 48.403,
+      "peak_rss_mb": 2.234375,
+      "failures": []
+     },
+     {
+      "wall": 0.3657932920000011,
+      "msgs_per_sec": 13668.92206432256,
+      "server_cpu_us_per_msg": 47.6554,
+      "peak_rss_mb": 2.171875,
+      "failures": []
+     }
+    ],
+    "rust-4t": [
+     {
+      "wall": 0.39243795800000014,
+      "msgs_per_sec": 12740.867436681541,
+      "server_cpu_us_per_msg": 95.407,
+      "peak_rss_mb": 2.328125,
+      "failures": []
+     },
+     {
+      "wall": 0.3931665839999998,
+      "msgs_per_sec": 12717.255747248353,
+      "server_cpu_us_per_msg": 91.0958,
+      "peak_rss_mb": 2.359375,
+      "failures": []
+     },
+     {
+      "wall": 0.3872959170000003,
+      "msgs_per_sec": 12910.025075219153,
+      "server_cpu_us_per_msg": 95.8378,
+      "peak_rss_mb": 2.46875,
+      "failures": []
+     },
+     {
+      "wall": 0.3554188749999998,
+      "msgs_per_sec": 14067.907901627348,
+      "server_cpu_us_per_msg": 88.1398,
+      "peak_rss_mb": 2.375,
+      "failures": []
+     },
+     {
+      "wall": 0.36191050000000047,
+      "msgs_per_sec": 13815.570424179441,
+      "server_cpu_us_per_msg": 90.06840000000001,
+      "peak_rss_mb": 2.34375,
+      "failures": []
+     },
+     {
+      "wall": 0.3566535420000001,
+      "msgs_per_sec": 14019.207469415791,
+      "server_cpu_us_per_msg": 87.1372,
+      "peak_rss_mb": 2.359375,
+      "failures": []
+     },
+     {
+      "wall": 0.3835984579999998,
+      "msgs_per_sec": 13034.463240725547,
+      "server_cpu_us_per_msg": 93.288,
+      "peak_rss_mb": 2.359375,
+      "failures": []
+     }
+    ]
+   }
+  },
+  {
+   "scenario": {
+    "name": "1KB, reused connections",
+    "clients": 1,
+    "sessions": 20,
+    "msgs": 50000,
+    "kb": 1,
+    "reuse": true
+   },
+   "summary": {
+    "postfix": {
+     "msgs_per_sec_median": 8928.044579877891,
+     "msgs_per_sec_min": 4419.151789387857,
+     "msgs_per_sec_max": 9629.115981056764,
+     "server_cpu_us_per_msg_median": 56.17864,
+     "peak_rss_mb_median": 4.328125,
+     "failures": 0
+    },
+    "rust": {
+     "msgs_per_sec_median": 27520.09162631771,
+     "msgs_per_sec_min": 11639.197447595498,
+     "msgs_per_sec_max": 32262.861462444944,
+     "server_cpu_us_per_msg_median": 29.687,
+     "peak_rss_mb_median": 2.171875,
+     "failures": 0
+    },
+    "rust-4t": {
+     "msgs_per_sec_median": 11238.010728254569,
+     "msgs_per_sec_min": 10741.541704246634,
+     "msgs_per_sec_max": 33089.673857956324,
+     "server_cpu_us_per_msg_median": 88.01975999999999,
+     "peak_rss_mb_median": 2.328125,
+     "failures": 0
+    }
+   },
+   "runs": {
+    "postfix": [
+     {
+      "wall": 5.332678916999999,
+      "msgs_per_sec": 9376.15048237865,
+      "server_cpu_us_per_msg": 53.23352,
+      "peak_rss_mb": 4.296875,
+      "failures": []
+     },
+     {
+      "wall": 5.6003304589999985,
+      "msgs_per_sec": 8928.044579877891,
+      "server_cpu_us_per_msg": 56.17864,
+      "peak_rss_mb": 4.328125,
+      "failures": []
+     },
+     {
+      "wall": 5.192584666999998,
+      "msgs_per_sec": 9629.115981056764,
+      "server_cpu_us_per_msg": 50.856719999999996,
+      "peak_rss_mb": 4.296875,
+      "failures": []
+     },
+     {
+      "wall": 6.166776499999997,
+      "msgs_per_sec": 8107.963698700613,
+      "server_cpu_us_per_msg": 61.380300000000005,
+      "peak_rss_mb": 4.34375,
+      "failures": []
+     },
+     {
+      "wall": 11.314388457999996,
+      "msgs_per_sec": 4419.151789387857,
+      "server_cpu_us_per_msg": 106.35553999999999,
+      "peak_rss_mb": 4.34375,
+      "failures": []
+     },
+     {
+      "wall": 5.589600708000006,
+      "msgs_per_sec": 8945.18277995036,
+      "server_cpu_us_per_msg": 53.79899999999999,
+      "peak_rss_mb": 4.296875,
+      "failures": []
+     },
+     {
+      "wall": 8.769751334000006,
+      "msgs_per_sec": 5701.415934811267,
+      "server_cpu_us_per_msg": 85.1393,
+      "peak_rss_mb": 4.328125,
+      "failures": []
+     }
+    ],
+    "rust": [
+     {
+      "wall": 1.5811291250000004,
+      "msgs_per_sec": 31622.97070455899,
+      "server_cpu_us_per_msg": 26.86692,
+      "peak_rss_mb": 2.171875,
+      "failures": []
+     },
+     {
+      "wall": 1.8168544160000017,
+      "msgs_per_sec": 27520.09162631771,
+      "server_cpu_us_per_msg": 29.63564,
+      "peak_rss_mb": 2.203125,
+      "failures": []
+     },
+     {
+      "wall": 1.5497695410000034,
+      "msgs_per_sec": 32262.861462444944,
+      "server_cpu_us_per_msg": 26.84314,
+      "peak_rss_mb": 2.21875,
+      "failures": []
+     },
+     {
+      "wall": 4.014687500000001,
+      "msgs_per_sec": 12454.269479255854,
+      "server_cpu_us_per_msg": 55.22684,
+      "peak_rss_mb": 2.1875,
+      "failures": []
+     },
+     {
+      "wall": 4.295828834000005,
+      "msgs_per_sec": 11639.197447595498,
+      "server_cpu_us_per_msg": 58.54036,
+      "peak_rss_mb": 2.15625,
+      "failures": []
+     },
+     {
+      "wall": 1.7148766660000092,
+      "msgs_per_sec": 29156.615744633225,
+      "server_cpu_us_per_msg": 29.687,
+      "peak_rss_mb": 2.171875,
+      "failures": []
+     },
+     {
+      "wall": 4.2890023749999955,
+      "msgs_per_sec": 11657.722619004158,
+      "server_cpu_us_per_msg": 58.276520000000005,
+      "peak_rss_mb": 2.15625,
+      "failures": []
+     }
+    ],
+    "rust-4t": [
+     {
+      "wall": 1.5613090830000012,
+      "msgs_per_sec": 32024.40858406251,
+      "server_cpu_us_per_msg": 37.27334,
+      "peak_rss_mb": 2.375,
+      "failures": []
+     },
+     {
+      "wall": 2.5715424999999996,
+      "msgs_per_sec": 19443.582985698275,
+      "server_cpu_us_per_msg": 55.29547999999999,
+      "peak_rss_mb": 2.328125,
+      "failures": []
+     },
+     {
+      "wall": 1.5110454160000018,
+      "msgs_per_sec": 33089.673857956324,
+      "server_cpu_us_per_msg": 36.271260000000005,
+      "peak_rss_mb": 2.328125,
+      "failures": []
+     },
+     {
+      "wall": 4.654825291999998,
+      "msgs_per_sec": 10741.541704246634,
+      "server_cpu_us_per_msg": 94.98304,
+      "peak_rss_mb": 2.328125,
+      "failures": []
+     },
+     {
+      "wall": 4.626861916999999,
+      "msgs_per_sec": 10806.46038220639,
+      "server_cpu_us_per_msg": 93.45564,
+      "peak_rss_mb": 2.34375,
+      "failures": []
+     },
+     {
+      "wall": 4.449185999999997,
+      "msgs_per_sec": 11238.010728254569,
+      "server_cpu_us_per_msg": 88.01975999999999,
+      "peak_rss_mb": 2.296875,
+      "failures": []
+     },
+     {
+      "wall": 4.606975542000001,
+      "msgs_per_sec": 10853.107324788136,
+      "server_cpu_us_per_msg": 93.84662,
+      "peak_rss_mb": 2.34375,
+      "failures": []
+     }
+    ]
+   }
+  },
+  {
+   "scenario": {
+    "name": "1MB, reused connections",
+    "clients": 1,
+    "sessions": 4,
+    "msgs": 2000,
+    "kb": 1024,
+    "reuse": true
+   },
+   "summary": {
+    "postfix": {
+     "msgs_per_sec_median": 282.1211338442668,
+     "msgs_per_sec_min": 175.96381825071342,
+     "msgs_per_sec_max": 297.3206669066262,
+     "server_cpu_us_per_msg_median": 3468.685,
+     "peak_rss_mb_median": 3.1875,
+     "failures": 0
+    },
+    "rust": {
+     "msgs_per_sec_median": 978.0675879414849,
+     "msgs_per_sec_min": 970.5529385674015,
+     "msgs_per_sec_max": 984.3273756346397,
+     "server_cpu_us_per_msg_median": 987.4370000000001,
+     "peak_rss_mb_median": 2.0625,
+     "failures": 0
+    },
+    "rust-4t": {
+     "msgs_per_sec_median": 2718.4245642281,
+     "msgs_per_sec_min": 2355.5723729812603,
+     "msgs_per_sec_max": 3013.9201685453677,
+     "server_cpu_us_per_msg_median": 994.4089999999999,
+     "peak_rss_mb_median": 2.21875,
+     "failures": 0
+    }
+   },
+   "runs": {
+    "postfix": [
+     {
+      "wall": 11.365972959000004,
+      "msgs_per_sec": 175.96381825071342,
+      "server_cpu_us_per_msg": 5488.03,
+      "peak_rss_mb": 3.1875,
+      "failures": []
+     },
+     {
+      "wall": 6.726743959000004,
+      "msgs_per_sec": 297.3206669066262,
+      "server_cpu_us_per_msg": 3304.1929999999998,
+      "peak_rss_mb": 3.1875,
+      "failures": []
+     },
+     {
+      "wall": 6.762603874999996,
+      "msgs_per_sec": 295.74407091824537,
+      "server_cpu_us_per_msg": 3324.417,
+      "peak_rss_mb": 3.1875,
+      "failures": []
+     },
+     {
+      "wall": 7.278022125000007,
+      "msgs_per_sec": 274.79993405488557,
+      "server_cpu_us_per_msg": 3548.4355,
+      "peak_rss_mb": 3.1875,
+      "failures": []
+     },
+     {
+      "wall": 6.881800666000004,
+      "msgs_per_sec": 290.6216115618015,
+      "server_cpu_us_per_msg": 3367.476,
+      "peak_rss_mb": 3.1875,
+      "failures": []
+     },
+     {
+      "wall": 7.089153417000006,
+      "msgs_per_sec": 282.1211338442668,
+      "server_cpu_us_per_msg": 3468.685,
+      "peak_rss_mb": 3.1875,
+      "failures": []
+     },
+     {
+      "wall": 7.492193833999977,
+      "msgs_per_sec": 266.9445084194022,
+      "server_cpu_us_per_msg": 3657.4025,
+      "peak_rss_mb": 3.1875,
+      "failures": []
+     }
+    ],
+    "rust": [
+     {
+      "wall": 2.0363614590000054,
+      "msgs_per_sec": 982.1439072914583,
+      "server_cpu_us_per_msg": 985.4300000000001,
+      "peak_rss_mb": 2.0625,
+      "failures": []
+     },
+     {
+      "wall": 2.031844332999995,
+      "msgs_per_sec": 984.3273756346397,
+      "server_cpu_us_per_msg": 983.6635,
+      "peak_rss_mb": 2.046875,
+      "failures": []
+     },
+     {
+      "wall": 2.043967582999983,
+      "msgs_per_sec": 978.489099648317,
+      "server_cpu_us_per_msg": 988.3005,
+      "peak_rss_mb": 2.0625,
+      "failures": []
+     },
+     {
+      "wall": 2.060680999999988,
+      "msgs_per_sec": 970.5529385674015,
+      "server_cpu_us_per_msg": 992.1169999999998,
+      "peak_rss_mb": 2.046875,
+      "failures": []
+     },
+     {
+      "wall": 2.054846999999995,
+      "msgs_per_sec": 973.3084750348833,
+      "server_cpu_us_per_msg": 985.812,
+      "peak_rss_mb": 2.046875,
+      "failures": []
+     },
+     {
+      "wall": 2.047164791,
+      "msgs_per_sec": 976.9609211689494,
+      "server_cpu_us_per_msg": 987.4370000000001,
+      "peak_rss_mb": 2.078125,
+      "failures": []
+     },
+     {
+      "wall": 2.044848459000008,
+      "msgs_per_sec": 978.0675879414849,
+      "server_cpu_us_per_msg": 992.2415,
+      "peak_rss_mb": 2.125,
+      "failures": []
+     }
+    ],
+    "rust-4t": [
+     {
+      "wall": 0.6813164169999908,
+      "msgs_per_sec": 2935.493626891464,
+      "server_cpu_us_per_msg": 981.8684999999998,
+      "peak_rss_mb": 2.21875,
+      "failures": []
+     },
+     {
+      "wall": 0.7449878330000104,
+      "msgs_per_sec": 2684.607602175393,
+      "server_cpu_us_per_msg": 1041.3380000000002,
+      "peak_rss_mb": 2.21875,
+      "failures": []
+     },
+     {
+      "wall": 0.6635875830000089,
+      "msgs_per_sec": 3013.9201685453677,
+      "server_cpu_us_per_msg": 984.8459999999999,
+      "peak_rss_mb": 2.21875,
+      "failures": []
+     },
+     {
+      "wall": 0.7540791249999756,
+      "msgs_per_sec": 2652.2415668250524,
+      "server_cpu_us_per_msg": 996.4150000000001,
+      "peak_rss_mb": 2.21875,
+      "failures": []
+     },
+     {
+      "wall": 0.7357202499999858,
+      "msgs_per_sec": 2718.4245642281,
+      "server_cpu_us_per_msg": 991.3444999999998,
+      "peak_rss_mb": 2.234375,
+      "failures": []
+     },
+     {
+      "wall": 0.8490505420000147,
+      "msgs_per_sec": 2355.5723729812603,
+      "server_cpu_us_per_msg": 1139.6805,
+      "peak_rss_mb": 2.234375,
+      "failures": []
+     },
+     {
+      "wall": 0.7302600839999798,
+      "msgs_per_sec": 2738.7502669529113,
+      "server_cpu_us_per_msg": 994.4089999999999,
+      "peak_rss_mb": 2.21875,
+      "failures": []
+     }
+    ]
+   }
+  },
+  {
+   "scenario": {
+    "name": "1KB, reused, 6 client processes",
+    "clients": 6,
+    "sessions": 20,
+    "msgs": 20000,
+    "kb": 1,
+    "reuse": true
+   },
+   "summary": {
+    "postfix": {
+     "msgs_per_sec_median": 8760.777471394542,
+     "msgs_per_sec_min": 8489.15486590133,
+     "msgs_per_sec_max": 8821.76184269637,
+     "server_cpu_us_per_msg_median": 59.75624166666667,
+     "peak_rss_mb_median": 10.828125,
+     "failures": 0
+    },
+    "rust": {
+     "msgs_per_sec_median": 36011.63850781926,
+     "msgs_per_sec_min": 34517.01981781322,
+     "msgs_per_sec_max": 44420.60058479147,
+     "server_cpu_us_per_msg_median": 27.05205833333333,
+     "peak_rss_mb_median": 4.015625,
+     "failures": 0
+    },
+    "rust-4t": {
+     "msgs_per_sec_median": 28532.774868051984,
+     "msgs_per_sec_min": 23342.53059059685,
+     "msgs_per_sec_max": 37986.93012185482,
+     "server_cpu_us_per_msg_median": 103.34234166666668,
+     "peak_rss_mb_median": 4.1875,
+     "failures": 0
+    }
+   },
+   "runs": {
+    "postfix": [
+     {
+      "wall": 13.774552041999982,
+      "msgs_per_sec": 8711.71705868242,
+      "server_cpu_us_per_msg": 60.18034166666667,
+      "peak_rss_mb": 10.828125,
+      "failures": []
+     },
+     {
+      "wall": 14.13568275,
+      "msgs_per_sec": 8489.15486590133,
+      "server_cpu_us_per_msg": 62.1441,
+      "peak_rss_mb": 10.84375,
+      "failures": []
+     },
+     {
+      "wall": 13.782206416000008,
+      "msgs_per_sec": 8706.878737550314,
+      "server_cpu_us_per_msg": 60.457991666666665,
+      "peak_rss_mb": 10.84375,
+      "failures": []
+     },
+     {
+      "wall": 13.602724959000028,
+      "msgs_per_sec": 8821.76184269637,
+      "server_cpu_us_per_msg": 59.11472500000001,
+      "peak_rss_mb": 10.84375,
+      "failures": []
+     },
+     {
+      "wall": 13.621291583999948,
+      "msgs_per_sec": 8809.73726022841,
+      "server_cpu_us_per_msg": 59.522600000000004,
+      "peak_rss_mb": 10.828125,
+      "failures": []
+     },
+     {
+      "wall": 13.625086957999997,
+      "msgs_per_sec": 8807.283239358832,
+      "server_cpu_us_per_msg": 59.56885833333333,
+      "peak_rss_mb": 10.828125,
+      "failures": []
+     },
+     {
+      "wall": 13.697414457999969,
+      "msgs_per_sec": 8760.777471394542,
+      "server_cpu_us_per_msg": 59.75624166666667,
+      "peak_rss_mb": 10.828125,
+      "failures": []
+     }
+    ],
+    "rust": [
+     {
+      "wall": 3.0371220000000108,
+      "msgs_per_sec": 39511.08977512249,
+      "server_cpu_us_per_msg": 24.512675,
+      "peak_rss_mb": 4.0,
+      "failures": []
+     },
+     {
+      "wall": 3.4353499999999997,
+      "msgs_per_sec": 34930.93862342993,
+      "server_cpu_us_per_msg": 27.647141666666663,
+      "peak_rss_mb": 4.015625,
+      "failures": []
+     },
+     {
+      "wall": 2.8064115839999886,
+      "msgs_per_sec": 42759.23057193327,
+      "server_cpu_us_per_msg": 22.742266666666666,
+      "peak_rss_mb": 4.015625,
+      "failures": []
+     },
+     {
+      "wall": 3.4765457920000244,
+      "msgs_per_sec": 34517.01981781322,
+      "server_cpu_us_per_msg": 27.692083333333333,
+      "peak_rss_mb": 4.015625,
+      "failures": []
+     },
+     {
+      "wall": 3.332256041999983,
+      "msgs_per_sec": 36011.63850781926,
+      "server_cpu_us_per_msg": 27.05205833333333,
+      "peak_rss_mb": 4.03125,
+      "failures": []
+     },
+     {
+      "wall": 3.3702226249999967,
+      "msgs_per_sec": 35605.95644627485,
+      "server_cpu_us_per_msg": 27.335833333333333,
+      "peak_rss_mb": 4.03125,
+      "failures": []
+     },
+     {
+      "wall": 2.7014492920000066,
+      "msgs_per_sec": 44420.60058479147,
+      "server_cpu_us_per_msg": 22.128424999999996,
+      "peak_rss_mb": 4.03125,
+      "failures": []
+     }
+    ],
+    "rust-4t": [
+     {
+      "wall": 4.213967832999998,
+      "msgs_per_sec": 28476.72425505201,
+      "server_cpu_us_per_msg": 103.34234166666668,
+      "peak_rss_mb": 4.1875,
+      "failures": []
+     },
+     {
+      "wall": 4.248613791999986,
+      "msgs_per_sec": 28244.506531979074,
+      "server_cpu_us_per_msg": 106.429,
+      "peak_rss_mb": 4.21875,
+      "failures": []
+     },
+     {
+      "wall": 5.140830791000013,
+      "msgs_per_sec": 23342.53059059685,
+      "server_cpu_us_per_msg": 95.91559166666667,
+      "peak_rss_mb": 4.1875,
+      "failures": []
+     },
+     {
+      "wall": 4.148617917000024,
+      "msgs_per_sec": 28925.295701074152,
+      "server_cpu_us_per_msg": 106.764825,
+      "peak_rss_mb": 4.15625,
+      "failures": []
+     },
+     {
+      "wall": 4.205689791999987,
+      "msgs_per_sec": 28532.774868051984,
+      "server_cpu_us_per_msg": 105.722675,
+      "peak_rss_mb": 4.171875,
+      "failures": []
+     },
+     {
+      "wall": 3.188185374999989,
+      "msgs_per_sec": 37638.96570788341,
+      "server_cpu_us_per_msg": 80.19438333333333,
+      "peak_rss_mb": 4.234375,
+      "failures": []
+     },
+     {
+      "wall": 3.1589812500000107,
+      "msgs_per_sec": 37986.93012185482,
+      "server_cpu_us_per_msg": 79.90838333333333,
+      "peak_rss_mb": 4.203125,
+      "failures": []
+     }
+    ]
+   }
+  }
+ ]
+}
